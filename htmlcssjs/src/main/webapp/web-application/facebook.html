@@ -1,0 +1,129 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <div class="toolbar">
+            <div class="toolbar-container">
+                <input type="text" value=""/>
+            </div>
+        </div>
+        <div class="container">
+            <div id="leftCol"></div>
+            <div id="newsFeed">
+                <div class="write-post"></div>
+                <div class="newfeed-item"></div>
+                <div class="newfeed-item"></div>
+                <div class="newfeed-item"></div>
+                <div class="newfeed-item"></div>
+                <div class="newfeed-item"></div>
+            </div>
+            <div id="advertist">
+                <div class="adv-item"></div>
+                <div class="adv-item"></div>
+                <div class="adv-item"></div>
+            </div>
+            <span class="clear"></span>
+        </div>
+        <div class="sidebar">
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+            <div class="online-item"></div>
+        </div>
+
+        <style>
+            .clear{
+                clear: both;
+            }
+            body{
+                margin: 0;
+                background-color: #e9eaed;
+            }
+            .toolbar{
+                background-color: #3a5795;
+                height: 43px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 10;
+            }
+            .sidebar{
+                width: 205px;
+                background-color: #e9eaed;
+                position: fixed;
+                right: 0;
+                top: 43px;
+                bottom: 0;
+                z-index: 10;
+                border : solid 1px #aaa;
+            }
+            .online-item{
+                height: 40px;
+                border-bottom : solid 1px #aaa;
+            }
+            .online-item:hover{
+                background-color: #fff;
+            }
+            .toolbar-container,
+            .container {
+                width: 976px;
+                position: relative;
+                left : 40%;
+                margin-left: -401px;
+            }
+            .toolbar-container input[type=text]{
+                position: relative;
+                top: 8px;
+                height: 20px;
+                width: 400px;
+                
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+            .container{
+                min-height: 2000px;
+                margin-top: 43px;
+            }
+            .container > div{
+                min-height: 2000px;
+                float: left;
+                margin-right: 8px;
+            }
+            .write-post{
+                height: 100px;
+                background-color: #fff;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            #leftCol{
+                width: 172px;
+            }
+            #newsFeed{
+                width: 496px;
+                //background-color: #fff;
+            }
+            #advertist{
+                width: 280px;
+                //background-color: #fff;
+            }
+            .adv-item, .newfeed-item{
+                height: 500px;
+                background-color: #fff;
+                margin-top: 10px;
+            }
+        </style>
+    </body>
+</html>
